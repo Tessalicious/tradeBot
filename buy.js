@@ -7,6 +7,8 @@ const binance = require('node-binance-api')().options({
 function buy() {
     var quantity = 1000000, price = '0.00000020';
     binance.buy("ERDBTC", quantity, price);
+     var quantity = 2000000, price = '0.00000030';
+    binance.buy("ERDBTC", quantity, price);
 }
 
-setInterval(buy, 110);
+setInterval(buy, 220);
